@@ -47,7 +47,7 @@ import {
     MarketTransactionResponse,
 } from './types/market-transaction.types';
 
-export default class SkinsBackWebApi extends EventEmitter {
+export class SkinsBackWebApi extends EventEmitter {
     private readonly config: SkinsBackWebApiConfig;
     private readonly skinsback: AxiosInstance = axios.create({
         baseURL: 'https://skinsback.com/api.php',
